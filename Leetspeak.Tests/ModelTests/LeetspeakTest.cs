@@ -36,5 +36,11 @@ namespace Translator.Tests
       LeetspeakTranslator testLeetspeak = new LeetspeakTranslator();
       Assert.AreEqual("S173m0z",testLeetspeak.Translating("SItemos"));
     }
+    [TestMethod]
+    public void Traslate_CheckAllBehaviors_finalOutput()
+    {
+      LeetspeakTranslator testLeetspeak = new LeetspeakTranslator();
+      Assert.AreEqual("D0n'7 y0u l0v3 7h3z3 'S7ring' 3x3rciz3z? 1 d0!",testLeetspeak.Translating("Don't you love these 'String' exercises? I do!"));
+    }
   }
 }
