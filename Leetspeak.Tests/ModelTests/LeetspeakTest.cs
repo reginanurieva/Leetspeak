@@ -7,10 +7,34 @@ namespace Translator.Tests
   public class LeetspeakTranslatorTest
   {
     [TestMethod]
-    public void Traslate_ReplaceLetterEWithThree_L33t()
+    public void Traslate_ReplaceLetterEWithThree_L33()
     {
       LeetspeakTranslator testLeetspeak = new LeetspeakTranslator();
-      Assert.AreEqual("l33t",testLeetspeak.Translating("leet"));
+      Assert.AreEqual("l33",testLeetspeak.Translating("lEe"));
+    }
+    [TestMethod]
+    public void Traslate_ReplaceLetterOWithZero_P03m()
+    {
+      LeetspeakTranslator testLeetspeak = new LeetspeakTranslator();
+      Assert.AreEqual("p03m",testLeetspeak.Translating("poem"));
+    }
+    [TestMethod]
+    public void Traslate_ReplaceLetterTWithSeven_7win()
+    {
+      LeetspeakTranslator testLeetspeak = new LeetspeakTranslator();
+      Assert.AreEqual("7win",testLeetspeak.Translating("twin"));
+    }
+    [TestMethod]
+    public void Traslate_ReplaceLetterIWithOne_10wa()
+    {
+      LeetspeakTranslator testLeetspeak = new LeetspeakTranslator();
+      Assert.AreEqual("10wa",testLeetspeak.Translating("Iowa"));
+    }
+    [TestMethod]
+    public void Traslate_CheckAllBehaviors_z173m0z()
+    {
+      LeetspeakTranslator testLeetspeak = new LeetspeakTranslator();
+      Assert.AreEqual("S173m0z",testLeetspeak.Translating("SItemos"));
     }
   }
 }

@@ -17,6 +17,22 @@ namespace Translator
         {
           outputList.Add('3');
         }
+        else if(inputList[i] == 'o' || inputList[i] == 'O')
+        {
+          outputList.Add('0');
+        }
+        else if(inputList[i] == 't' || inputList[i] == 'T')
+        {
+          outputList.Add('7');
+        }
+        else if(inputList[i] == 'I')
+        {
+          outputList.Add('1');
+        }
+        else if((i != 0) && (inputList[i] == 's'))
+        {
+          outputList.Add('z');
+        }
         else
         {
           outputList.Add(inputList[i]);
